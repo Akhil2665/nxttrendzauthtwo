@@ -44,7 +44,7 @@ class LoginForm extends Component {
     const data = await response.json()
     console.log(data.jwt_token)
     if (response.ok === true) {
-      this.onSubmitSuccess(data.jwtToken)
+      this.onSubmitSuccess(data.jwt_token)
     } else {
       this.onSubmitFailure(data.error_msg)
     }
